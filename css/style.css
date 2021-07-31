@@ -469,15 +469,32 @@ footer {
   padding-left: 100px;
   padding-top: 50px;
   margin-bottom: 200px;
+  width: 100%;
+  display: flex;
 }
 
 .contacto {
   float: left;
+  width: 40%;
 }
+.contacto img{
 
+}
 .contactoInfo {
   text-align: center;
   padding: 0px;
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .contacto img{
+    display: none;
+  }
+  .contactoInfo {
+    text-align: center;
+    width: 100%;
+    margin-left: -200px;
+    font-size: 14px;
+  }
 }
 
 /*ACCESORIOS*/
@@ -494,6 +511,7 @@ footer {
 }
 .divFotos{
   width: 100%;
+  display: inline-block;
 }
 .divFotos img{
   width: 33%;
